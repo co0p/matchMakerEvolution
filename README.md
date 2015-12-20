@@ -16,12 +16,15 @@ randomness you most likely will get a better random match.
 Developing
 ----------
 To install the development environment, run
+
     npm install
     jspm install -y
 
 To kick off website, run
+
     gulp watch
 
 To bundle and export your changes, run
+
     gulp build
     gulp export
