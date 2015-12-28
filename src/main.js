@@ -1,5 +1,4 @@
 import 'bootstrap';
-import {SettingsService} from 'services/SettingsService';
 
 export function configure(aurelia) {
   aurelia.use

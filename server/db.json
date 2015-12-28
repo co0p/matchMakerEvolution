@@ -1,9 +1,79 @@
 {
-  "candidates": [
+  "users": [
     {
-      "address": "me@there.com",
+      "address": "me1@there.com",
       "sex": "male",
       "department": "it"
+    },
+    {
+      "address": "me2@there.com",
+      "sex": "male",
+      "department": "it"
+    },
+    {
+      "address": "me3@there.com",
+      "sex": "male",
+      "department": "it"
+    },
+    {
+      "address": "me4@there.com",
+      "sex": "male",
+      "department": "it"
+    },
+    {
+      "address": "me5@there.com",
+      "sex": "female",
+      "department": "it"
+    },
+    {
+      "address": "them1@there.com",
+      "sex": "male",
+      "department": "bi"
+    },
+    {
+      "address": "them2@there.com",
+      "sex": "male",
+      "department": "bi"
+    },
+    {
+      "address": "them3@there.com",
+      "sex": "female",
+      "department": "bi"
+    },
+    {
+      "address": "them4@there.com",
+      "sex": "female",
+      "department": "bi"
+    },
+    {
+      "address": "markm@there.com",
+      "sex": "male",
+      "department": "pr"
+    },
+    {
+      "address": "markm0@there.com",
+      "sex": "female",
+      "department": "pr"
+    },
+    {
+      "address": "markm1@there.com",
+      "sex": "male",
+      "department": "pr"
+    },
+    {
+      "address": "markm2@there.com",
+      "sex": "female",
+      "department": "pr"
+    },
+    {
+      "address": "markm3@there.com",
+      "sex": "female",
+      "department": "pr"
+    },
+    {
+      "address": "markm4@there.com",
+      "sex": "female",
+      "department": "pr"
     }
   ]
 }

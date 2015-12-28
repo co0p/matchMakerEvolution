@@ -1,4 +1,19 @@
 <template>
   <h1>${heading}</h1>
-  
+
+  <table class='table' >
+    <tr>
+      <th click.trigger="sortBy('address')" class="${sortKey == 'address' ? 'text-uppercase' : ''}">Email</th>
+      <th click.trigger="sortBy('department')" class="${sortKey == 'department' ? 'text-uppercase' : ''}">Department </th>
+      <th click.trigger="sortBy('sex')" class="${sortKey == 'sex' ? 'text-uppercase' : ''}">Sex</th>
+      <th click.trigger="sortBy('matches')" class="${sortKey == 'matches' ? 'text-uppercase' : ''}">Matches</th>
+    </tr>
+    <tr repeat.for="user of users">
+      <td>${user.address}</td>
+      <td>${user.department}</td>
+      <td>${user.sex}</td>
+      <td>${user.matches}</td>
+    </tr>
+  </table>
+
 </template>
