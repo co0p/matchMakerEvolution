@@ -1,14 +1,12 @@
 import {inject} from 'aurelia-framework';
-import {Configuration} from '../services/Configuration';
+import {Settings} from '../services/Settings';
 
-@inject(Configuration)
+@inject(Settings)
 export class SettingsPage {
   heading = 'Settings';
   settings = {};
 
-  constructor(Configuration) {
-    this.Configuration = Configuration;
-    this.settings = this.Configuration;
-    console.log(this.settings);
+  constructor(Settings) {
+    this.settings = Settings;
   }
 }

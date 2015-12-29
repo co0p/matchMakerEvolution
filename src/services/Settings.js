@@ -1,4 +1,4 @@
-export class Configuration {
+export class Settings {
 
   /* boosts */
   minBoost = 0;

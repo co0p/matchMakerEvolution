@@ -31,4 +31,8 @@ export class UsersPage {
           return this.users;
         });
   }
+
+  bla(blaa) {
+    console.log('bal', blaa);
+  }
 }
