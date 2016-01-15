@@ -33,7 +33,7 @@ We will use a one -point crossover function which takes two candidates and creat
 Using only crossover it is possible that we are optimizing towards a local optimum. Therefore we will add some random mutation to randomly selected candidates after crossover, allowing the evolution to 'step' out of the local optimum:
 
     value range = [a, ..., z]   ==>  b
-    candidate: klmnofghij  ==> klmnofgh<i>j ==> klmnofghbj
+    candidate: klmnofghij ==> klmnofgh<i>j ==> klmnofghbj
 
 
 ## Developing
@@ -46,6 +46,10 @@ To install the development environment, run
 To kick off website, run
 
     gulp watch
+
+In a new terminal start the json-server (which will serve data at http://localhost:3000):
+
+   json-server server/db.json
 
 To bundle and export your changes, run
 
