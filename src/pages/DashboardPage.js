@@ -1,8 +1,10 @@
 import {inject} from 'aurelia-framework';
 import {Settings} from '../services/Settings';
 
-@inject(Settings)
 export class DashboardPage {
+  
+  static inject = [Settings];
+
   heading = 'Dashboard';
 
   constructor(Settings){

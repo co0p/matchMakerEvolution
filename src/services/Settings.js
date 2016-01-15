@@ -11,7 +11,6 @@ export class Settings {
 
 
   /* genetic algorithm settings*/
-
   mutationMin = 0;
   mutationMax = 1;
   mutationSteps = 0.01;

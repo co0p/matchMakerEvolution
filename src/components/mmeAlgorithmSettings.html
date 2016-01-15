@@ -14,10 +14,11 @@
   <div class="form-group">
     <label>elite member count (${settings.eliteCount})</label>
     <input type="range" value.bind="settings.eliteCount" class="form-control" min=${settings.eliteMin} max=${settings.eliteMax}>
-    The elite of a generated population is not taking part in the evolutionary process. This elite is transfered to the next generation.
+    The elite of a generated population is not taking part in the evolutionary process. This elite is transfered untouched to the next generation.
   </div>
   <div class="form-group">
     <label>Mutation probability (${settings.mutationProbability})</label>
     <input type="range" step="${settings.mutationSteps}" value.bind="settings.mutationProbability" class="form-control" min="${settings.mutationMin}" max="${settings.mutationMax}">
+    Defines how likely it is that a candidate is going to be mutated at a random place.
   </div>
 </template>

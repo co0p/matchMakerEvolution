@@ -1,12 +1,14 @@
 import {inject} from 'aurelia-framework';
 import {UsersService} from '../services/UsersService';
 
-@inject(UsersService)
 export class UsersPage {
+
   heading = 'Users';
   users = [];
   sortDir = -1;
   sortKey = 'address';
+
+  static inject = [UsersService];
 
   constructor(UsersService) {
     this.UsersService = UsersService;
