@@ -3,10 +3,10 @@
 
   <div class="container">
     <div class="row table-heading">
-      <div class="columns col-md-3" click.trigger="sortBy('address')" class="${sortKey == 'address' ? 'text-uppercase' : ''}">name / Address</div>
-      <div class="columns col-md-2" click.trigger="sortBy('matches')" class="${sortKey == 'matches' ? 'text-uppercase' : ''}">matches</div>
-      <div class="columns col-md-3" click.trigger="sortBy('department')" class="${sortKey == 'department' ? 'text-uppercase' : ''}">department</div>
-      <div class="columns col-md-3" click.trigger="sortBy('sex')" class="${sortKey == 'sex' ? 'text-uppercase' : ''}">sex</div>
+      <div class="columns col-md-3 ${sortKey == 'address' ? 'table-heading__sort' : ''}" click.trigger="sortBy('address')">name / Address</div>
+      <div class="columns col-md-2 ${sortKey == 'matches' ? 'table-heading__sort' : ''}" click.trigger="sortBy('matches')">matches</div>
+      <div class="columns col-md-3 ${sortKey == 'department' ? 'table-heading__sort' : ''}" click.trigger="sortBy('department')">department</div>
+      <div class="columns col-md-3 ${sortKey == 'sex' ? 'table-heading__sort' : ''}" click.trigger="sortBy('sex')">sex</div>
     </div>
 
     <div class='row table-row' repeat.for="user of users" click.trigger="bla()">

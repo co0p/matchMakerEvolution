@@ -1,0 +1,19 @@
+<template class="container">
+  <h3>Match making configuration</h3>
+  <div class="form-group">
+    <label>Group count (${settings.groupCount})</label>
+    <input type="number" value.bind="settings.groupCount" class="form-control" placeholder="Group count">
+  </div>
+  <div class="form-group">
+    <label>sex boost (${settings.sexBoost})</label>
+    <input type="range" value.bind="settings.sexBoost" min=${settings.minBoost} max=${settings.maxBoost} class="form-control">
+  </div>
+  <div class="form-group">
+    <label>department boost (${settings.departmentBoost})</label>
+    <input type="range" value.bind="settings.departmentBoost" class="form-control" min=${settings.minBoost} max=${settings.maxBoost}>
+  </div>
+  <div class="form-group">
+    <label>match boost (${settings.matchBoost})</label>
+    <input type="range" value.bind="settings.matchBoost" class="form-control" min=${settings.minBoost} max=${settings.maxBoost}>
+  </div>
+</template>

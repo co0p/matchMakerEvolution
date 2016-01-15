@@ -1,0 +1,23 @@
+<template class="container">
+  <h3>genetic algorithm configuration</h3>
+
+  <div class="form-group">
+    <label>population count (${settings.populationCount})</label>
+    <input type="range" value.bind="settings.populationCount" min=${settings.populationMin} max=${settings.populationMax} class="form-control">
+    The size of the population to generate during one evolutionary step increases the randomness.
+  </div>
+  <div class="form-group">
+    <label>generation count (${settings.generationCount})</label>
+    <input type="range" value.bind="settings.generationCount" class="form-control" min=${settings.generationMin} max=${settings.generationMax}>
+    The number of generations to generate simulating evolution. This determines when to stop the evolutionary process.
+  </div>
+  <div class="form-group">
+    <label>elite member count (${settings.eliteCount})</label>
+    <input type="range" value.bind="settings.eliteCount" class="form-control" min=${settings.eliteMin} max=${settings.eliteMax}>
+    The elite of a generated population is not taking part in the evolutionary process. This elite is transfered to the next generation.
+  </div>
+  <div class="form-group">
+    <label>Mutation probability (${settings.mutationProbability})</label>
+    <input type="range" step="${settings.mutationSteps}" value.bind="settings.mutationProbability" class="form-control" min="${settings.mutationMin}" max="${settings.mutationMax}">
+  </div>
+</template>
